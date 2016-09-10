@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <SCRIPT LANGUAGE="JavaScript">
+  <!--
+
+var req = new XMLHttpRequest();
+
+function reportStatus()
+{
+    // only if req shows "complete"
+    if (req.readyState == 4) {
+        // only if "OK"
+        if (req.status == 200) {
+            // ...processing statements go here...
+	        alert('Transfer complete.');
+			alert("Esse é o status: " + req.statusText);
+			alert("E essa é a saída: " + req.responseText);
+        } else {
+            alert("There was a problem retrieving the XML data:\n" + req.statusText);
+        }
+    }
+}
+
+
+try {
+		if (netscape.security.PrivilegeManager.enablePrivilege) {
+				alert("Está no netscape");
+				netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+				if (window.XMLHttpRequest){
+					req.onreadystatechange = reportStatus;
+					req.open("GET", "http://www.azamec.com.br/sitemap.xml", true);
+					req.send();
+				}
+		}
+
+	} catch (ex) { // eat it
+	alert("caiu no catch");
+		if (window.XMLHttpRequest){
+			var req = new XMLHttpRequest();
+			req.onreadystatechange = reportStatus;
+			req.open("GET", "http://www.azamec.com.br/sitemap.xml", true);
+			req.send();
+		}
+
+	}
+
+
+//-->
+  </SCRIPT>
+ </BODY>
+</HTML>

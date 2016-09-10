@@ -1,0 +1,6 @@
+AuthUserFile /home/azamec/www/imd_tagger/.htpasswd
+AuthName Protegido!!
+AuthType Basic
+<Limit GET POST>
+require user azamec
+</Limit>

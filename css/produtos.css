@@ -1,0 +1,92 @@
+#destaques {
+	width:750px;
+	padding: 20px 0;
+}
+
+#destaques div {
+	background:#E8E8E8;
+	float:left;
+	width:750px;
+	height: 200px;
+	margin: 10px 0px;
+	display:inline;
+}
+
+#destaques div h4 a {
+	text-indent:-9000px; /*truque sujo para tirar o texto quando o browser é capaz de carregar a figura */
+	float:left;
+	width:300px;
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center top; /* alinha a figura no topo */
+}
+
+#alimentacaoprensas   h4 a { 
+	background-image:url(../images/alimentacaoprensas-icao.jpg); 
+}
+
+#corteendireitamento   h4 a { 
+	background-image:url(../images/corteendireitamento-icao.jpg); 
+}
+
+#laminacao h4 a { 
+	background-image:url(../images/laminacao-icao.jpg);
+}
+
+#endireitamento h4 a { 
+	background-image:url(../images/endireitamento-icao.jpg);
+}
+
+#conformacao h4 a { 
+	background-image:url(../images/conformacao-icao.jpg);
+}
+
+#trefilacao h4 a { 
+	background-image:url(../images/trefilacao-icao.jpg);
+}
+
+#projetosespeciais h4 a { 
+	background-image:url(../images/projetosespeciais-icao.jpg);
+}
+
+#componentes h4 a { 
+	background-image:url(../images/componentes-icao.jpg);
+}
+
+#destaques div p {
+	float: left;
+	font: bold 80% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;	
+	color:#777;
+	width:400px;
+	text-align: justify;
+	padding: 0 0 0 10px;
+}
+
+#destaques div h3 {
+	float: left;
+	font: bold 80% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;	
+	color:rgb(0,107,176);
+	text-transform:uppercase;
+	text-align: left;
+	width:400px;
+	padding: 5px 0 0 10px;
+	text-align: left;
+}
+
+#destaques div h5 {
+	float: left;
+	font: bold 80% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;	
+	color:rgb(0,107,176);
+	/*text-transform:uppercase;*/
+	text-align: left;
+	width:400px;
+	padding: 0px 0 0 10px;
+	text-align: left;
+}
+
+#destaques div div {
+	float: left;
+	width:450px;
+	height:100px;
+	padding: 0 0 0 0;
+}

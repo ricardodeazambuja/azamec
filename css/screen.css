@@ -1,0 +1,150 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	border:none;
+	vertical-align:middle;
+	_text-align:center; /*Usado pra corrigir o problema das margens no IE5, argh!*/
+}
+
+body{
+	width:750px;
+	margin: 13px auto; /*Não tem efeito no IE5, argh!*/
+}
+
+/**************************
+Cabeçalho - logo e menu
+*************************/
+#cabecalho {
+	background-color:rgb(0,107,176);
+	height:113px;
+	width:750px;
+}
+
+#logotipo h1 a {
+	text-indent:-9000px; /*truque sujo para tirar o texto quando o browser é capaz de carregar a figura */
+	float:left;
+	width:264px;
+	height:113px;
+	background:url(../images/logo.jpg) no-repeat left center;
+	border-style:none;
+}
+
+#fotos-rotativas li {
+	display:inline; /*Coloca os itens lado-a-lado*/
+}
+
+
+#fotos-rotativas li a.equipamento1 {
+	text-indent:-9000px; /*truque sujo para tirar o texto quando o browser é capaz de carregar a figura */
+	float:left;
+	width:162px;
+	height:95px;
+	background:url(../images/fotinho1.jpg) no-repeat center center;
+	margin: 10px 0 0 0;
+}
+
+#fotos-rotativas li a.equipamento2 {
+	text-indent:-9000px; /*truque sujo para tirar o texto quando o browser é capaz de carregar a figura */
+	float:left;
+	width:162px;
+	height:95px;
+	background:url(../images/fotinho2.jpg) no-repeat center center;
+	margin: 10px 0 0 0;
+}
+
+#fotos-rotativas li a.equipamento3 {
+	text-indent:-9000px; /*truque sujo para tirar o texto quando o browser é capaz de carregar a figura */
+	float:left;
+	width:162px;
+	height:95px;
+	background:url(../images/fotinho3.jpg) no-repeat center center;
+	margin: 10px 0 0 0;
+}
+
+#menu {
+	background-color:rgb(222,222,221);
+	height:26px;
+	width:750px;
+}
+
+#menu li {
+	display:inline; /*Coloca os itens lado-a-lado*/
+}
+
+#menu li a {
+	float:left;
+	font: bold 70% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;
+	color:rgb(0,107,176);
+	width:90px;/*107px;*/
+	padding:5px 0;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+#menu li a.item-inicio{
+	border-left:none;
+	padding-left: 10px;
+}
+
+#menu li a.item-english{
+	border-right:none;
+}
+
+#menu li a:hover {
+	background-color:  rgb(170,169,169);
+	color: #FFFFFF;
+}
+
+/*****************************
+FIM DO CABEÇALHO LOGO E MENU
+******************************/
+
+
+/**************************
+RODAPÉ
+*************************/
+
+
+#rodape {
+/*	float:left; */
+/*	clear: both; */
+	width:750px;
+	text-align:center;
+/*	margin: 0 auto; */
+	display:inline;
+}
+
+#rodape div{
+	float:left;
+/*	margin: 0 auto; */
+	text-align:center;
+}
+
+#rodape ul li {
+	display:inline; /*Coloca os itens lado-a-lado*/
+	padding: 20px 0;
+	font: bold 85% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;	
+	color:#CCC;
+
+	text-align:center;
+}
+
+#rodape ul li a{
+	font: bold 85% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;	
+	color:#CCC;
+}
+
+#rodape ul li a:hover {
+	color: #000;
+}
+
+#rodape address {
+	font: bold 50% 'Trebuchet Ms', Helvetica, Arial, Tahoma, Verdana, Sans-Serif;	
+	color:#CCC;
+}
+
+/**************************
+FIM DO RODAPÉ
+*************************/
